@@ -1,0 +1,3 @@
+# Objective-C ARC Memory Leak
+
+This repository demonstrates a common memory leak in Objective-C when using Automatic Reference Counting (ARC) and repeated string creation within a method. The leak occurs because each method call allocates a new string, but the old string is not properly released, leading to memory buildup over time. The solution shows how to correctly handle the string assignment, releasing the old string before allocating a new one to avoid this type of leak.
